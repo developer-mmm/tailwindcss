@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold mb-4 underline">WELCOME!</h1>
+    <h3 class="text-xl mb-5">User Info!</h3>
+
+    <form>
+      <div
+        class="flex justify-center py-12 gap-10 hover:shadow-md max-w-lg mb-4 bg-indigo-800"
+      >
+        <div class="left">
+          <label class="mb-4 block">
+            <span class="block text-white">User name:</span>
+            <input
+              id="name"
+              class="border-2 border-red-400 focus:outline-blue-600 rounded"
+              type="text"
+              required
+              maxlength="15"
+              placeholder="   User name"
+            />
+          </label>
+          <label class="mb-4 block">
+            <span class="block text-white">Surname:</span>
+            <input
+              id="surname"
+              class="border-2 border-red-400 focus:outline-blue-600 rounded"
+              type="text"
+              required
+              maxlength="15"
+              placeholder="  User Surname"
+            />
+          </label>
+        </div>
+        <div class="right">
+          <label class="mb-4 block">
+            <span class="block text-white">Phone Number:</span>
+            <input
+              id="name"
+              class="border-2 border-red-400 focus:outline-blue-600 rounded"
+              type="tel"
+              required
+              maxlength="15"
+              placeholder="  Tel: 1234567"
+            />
+          </label>
+          <label class="mb-4 block">
+            <span class="block text-white">Email:</span>
+            <input
+              id="name"
+              class="border-2 border-red-400 focus:outline-blue-600 rounded"
+              type="email"
+              required
+              maxlength="15"
+              placeholder="  email@.com"
+            />
+          </label>
+        </div>
+      </div>
+      <button
+        class="border px-4 py-1 rounded bg-green-600 hover:bg-green-800 hover:text-white transition duration-600"
+      >
+        Submit
+      </button>
+    </form>
+    <script src="./app.js"></script>
+  </body>
+</html>
